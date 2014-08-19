@@ -1,3 +1,3 @@
 require "yeah/web/server"
 
-Yeah::Web::Server.new.start
+run Yeah::Web::Server.const_get("Application").new
